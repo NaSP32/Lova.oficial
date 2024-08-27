@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Lova.oficial</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #92a4ff;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            background-color: #FFF;
+        }
+
+        td {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+            background-color: rgb(162, 162, 162);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lova</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                    <li><a href="coleccion.html">Colecciones</a></li>
+                    <li><a class="active" href="tabla.html">Tabla de talles</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2 style="margin: 15px;">Tabla de talles</h2>
+    <hr>
+
+    <div class="container">
+        <table>
+            <colgroup>
+                <col style="background-color: blueviolet;">
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <th>Talles</th>
+            <th>85</th>
+            <th>90</th>
+            <th>95</th>
+            <th>100</th>
+            <th>105</th>
+            <th>110</th>
+
+
+            <tr>
+                <td>Contorno de busto en cm</td>
+                <td>85</td>
+                <td>90</td>
+                <td>95</td><!--Fila de columna-->
+                <td>100</td>
+                <td>105</td>
+                <td>110</td>
+            </tr>
+
+            <tr>
+                <td>Contorno bajo busto en cm</td>
+                <td>68-74</td>
+                <td>78-72</td>
+                <td>76-86</td>
+                <td>82-92</td>
+                <td>88-98</td>
+                <td>94-104</td>
+            </tr>
+
+            <tr>
+                <td>margen en cm</td>
+                <td>+-2</td>
+                <td>+-2</td>
+                <td>+-2</td>
+                <td>+-2</td>
+                <td>+-2</td>
+                <td>+-2</td>
+            </tr>
+
+        </table>
+        <br><br>
+    </div>
+    <br><br><br>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados &copy; </p>
